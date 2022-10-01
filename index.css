@@ -1,0 +1,139 @@
+body {
+	background-color: #000;
+	color: #fff;
+	padding: 5% 10%;
+	margin: 0;
+	font-size: 22px;
+	font-family: monospace;
+	display: grid;
+	grid-template-columns: auto;
+}
+
+a:link, a:visited{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #f30;
+}
+
+header {
+	text-align: center;
+}
+
+#impact {
+	position: absolute;
+	top: 15%;
+	right: 40%;
+	width: 10rem;
+	height: 14.1rem;
+	background-image: url('img/impact.gif');
+	background-size: cover;
+	animation: impact 6s linear forwards;
+}
+
+@keyframes impact {
+	0% {
+		translate: -100vw 20vh;
+		background-image: url('img/dart.png');
+	}
+	49% {
+		background-image: url('img/dart.png');
+	}
+	50% {
+		translate: 0;
+		background-image: url('img/impact.gif');
+	}
+	65% {
+		rotate: 20deg;
+		background-image: none;
+	}
+	100% {
+		background-image: none;
+	}
+}
+
+#dimorphos {
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	width: 32rem;
+	height: 20rem;
+	background-image: url('img/dimorphos.png');
+	background-size: contain;
+	animation: redirect 6s linear forwards;
+}
+
+@keyframes redirect{
+	0% {
+		translate: 7vw -5vh;
+		rotate: -15deg;
+	}
+	50% {
+		rotate: 2deg;
+
+	}
+	52% {
+		translate: 0vw 0vh;
+		width: 32rem;
+		height: 20rem;
+		rotate: 12deg;
+	}
+	54% {
+		translate: 2vw -1vh;
+		opacity: 1;
+	}
+	74% {
+		translate: 12vw -10vh;
+		opacity: 0.5;
+	}
+	97% {
+		translate: 20vw -18vh;
+		opacity: 0;
+		background-image: url('img/dimorphos.png');
+		width: 1.6rem;
+		height: 1rem;
+	}
+	99% {
+		rotate: 140deg;
+		background-image: none;
+		translate: 20vw -18vh;
+	}
+	100% {
+		translate: 0vw 0vh;
+		background-image: none;
+	}
+}
+
+body {
+	animation: tilt 6s ease-in-out forwards;
+}
+
+@keyframes tilt {
+	50% {
+		rotate: 0deg;
+	}
+	52% {
+		rotate: 1deg;
+	}
+	55% {
+		rotate: -1deg;
+	}
+	58% {
+		rotate: 2deg;
+	}
+	62% {
+		rotate: -3deg;
+	}
+	77% {
+		rotate: 5deg;
+	}
+	90% {
+		rotate: 3deg;
+	}
+	100% {
+		rotate: 4deg;
+	}
+}
